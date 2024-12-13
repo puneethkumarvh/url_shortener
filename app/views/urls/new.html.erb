@@ -1,0 +1,10 @@
+<h1>Shorten a URL</h1>
+<%= form_with model: @url, local: true do |form| %>
+  <div>
+    <%= form.label :long_url, "Enter a URL" %>
+    <%= form.text_field :long_url %>
+  </div>
+  <div>
+    <%= form.submit "Shorten" %>
+  </div>
+<% end %>
